@@ -1,0 +1,211 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+.main-wrapper {
+  margin: 0px auto;
+  width: 93.75%;
+  height: 100%;
+  max-width: 960px;
+  font: normal 100% sans-serif;
+  text-decoration: none;
+}
+.header {
+  margin-top: 15px;
+  margin: 2% 1% 0 1%;
+}
+.header .logo {
+  display: inline-block;
+  line-height: 70px;
+  vertical-align: middle;
+  float: left;
+  font-family: 'Kaushan Script', cursive;
+  color: #181818;
+  font-size: 1.9em;
+  cursor: pointer;
+}
+.header .logo p {
+  display: inline;
+}
+.header .about-me {
+  float: right;
+  display: inline;
+  font-family: 'Merriweather', Georgia, "Times New Roman", Times, serif;
+  font-size: 0.9em;
+  max-width: 50%;
+}
+.header .about-me .firstcharacter {
+  float: left;
+  font-size: 33px;
+  line-height: 30px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 5px;
+  font-family: 'Merriweather', Georgia, "Times New Roman", Times, serif;
+}
+.works .works-header {
+  padding-bottom: 1%;
+  margin: 1%;
+  font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans-serif;
+  color: #666666;
+}
+.works .works-header .title {
+  float: left;
+}
+.works .works-header .title .tube {
+  height: 1.6em;
+}
+.works .works-header .title h3 {
+  font-size: 1.3em;
+  display: inline-block;
+  color: #4F4640;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-left: 10px;
+  position: relative;
+  top: -3px;
+}
+.works .works-header .filter {
+  float: right;
+  padding: 5px 0px 0px 0px;
+  letter-spacing: 0.1em;
+}
+.works .works-header .filter li {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.works-content {
+  width: 100%;
+}
+.works-content .item-wrapper {
+  width: 33.33333333%;
+  min-height: 250px;
+  float: left;
+}
+.works-content .item-wrapper .img-div {
+  width: 92%;
+  margin: 0 auto;
+}
+.works-content .item-wrapper .img-div img {
+  max-width: 100%;
+  height: auto;
+}
+.works-content .item-wrapper .description {
+  width: 92%;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+.works-content .item-wrapper .description a {
+  font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans-serif;
+  color: inherit;
+  text-decoration: none;
+}
+.works-content .item-wrapper .description a h5 {
+  font-size: 1.5em;
+}
+.works-content .item-wrapper .description .tags {
+  font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans-serif;
+  padding-top: 1%;
+}
+.works-content .item-wrapper .description .tags .fa {
+  margin-right: 3%;
+}
+.works-content .item-wrapper .description .tags span {
+  font-size: 0.9em;
+}
+footer {
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+footer .footer-content .copyright {
+  float: left;
+  font-size: 0.7em;
+  line-height: 40px;
+  font-family: 'Merriweather', Georgia, "Times New Roman", Times, serif;
+}
+footer .footer-content .links a {
+  float: right;
+  text-decoration: none;
+  margin: 0% 0% 1% 1%;
+  font-size: 1.7em;
+  color: #666666;
+}
+footer .footer-content .links a:hover {
+  color: #e3d94c;
+}
+.main-wrapper .separator-buttom {
+  margin-bottom: 1%;
+  margin-top: 0;
+}
+.separator {
+  background: url("../images/pattern_06.png") repeat-x scroll left bottom transparent;
+  min-height: 10px;
+  margin: 4% 1% 3% 1%;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 850px) {
+  .works-content .item-wrapper .view p {
+    font-size: 0.6em;
+  }
+  .works-content .item-wrapper .view a.info {
+    font-size: 0.9em;
+  }
+  .works-content .item-wrapper {
+    min-height: 210px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .logo {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .header .about-me {
+    float: none;
+  }
+  .works-content .item-wrapper {
+    width: 50%;
+  }
+  .works-content .item-wrapper .view p {
+    font-size: 0.7em;
+  }
+  .works-content .item-wrapper .view a.info {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .works .works-header {
+    margin: 2%;
+  }
+  .works .works-header .title {
+    float: none;
+    display: inline-block;
+    text-align: center;
+  }
+  .works .works-header .filter {
+    float: none;
+    display: inline-block;
+  }
+  .works-content .item-wrapper {
+    width: 100%;
+    padding-bottom: 6%;
+  }
+  .works-content .item-wrapper .img-div {
+    width: 96%;
+  }
+  .works-content .item-wrapper .description {
+    width: 96%;
+  }
+  .works-content .item-wrapper .view p {
+    font-size: 0.8em;
+  }
+  .works-content .item-wrapper .view a.info {
+    font-size: 0.9em;
+  }
+}

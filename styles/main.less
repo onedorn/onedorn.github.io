@@ -1,0 +1,300 @@
+@grey: #666;
+
+@font-size-12: 12/16em;
+@font-size-16: 1em;
+@font-size-20: 20/16em;
+@font-size-24: 24/16em;
+@font-size-32: 32/16em;
+
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main-wrapper {
+  margin: 0px auto;
+  width: 900/960*100%;
+  height: 100%;
+  max-width: 960px;
+  font: normal 100% sans-serif;
+  text-decoration: none;
+}
+
+// ******************************************************************************
+// HEADER ******************************************************************
+// ******************************************************************************
+
+.header {
+  margin-top: 15px;
+  margin: 2% 1% 0 1%;
+
+  .logo {
+    display:inline-block; 
+    line-height: 70px;
+    vertical-align:middle;
+    float: left;
+    font-family: 'Kaushan Script', cursive;
+    color: #181818;
+    font-size: 1.9em;
+    cursor: pointer;
+
+    p {
+      display: inline;;
+    }
+  }
+
+  .about-me {
+    float: right;
+    display: inline;
+    font-family: 'Merriweather', Georgia,"Times New Roman",Times,serif; 
+    font-size: 0.9em;
+    max-width: 50%;
+
+    .firstcharacter { 
+      float: left; 
+      font-size: 33px; 
+      line-height: 30px; 
+      padding-top: 4px; 
+      padding-right: 8px; 
+      padding-left: 5px; 
+      font-family: 'Merriweather', Georgia,"Times New Roman",Times,serif; 
+    }
+  }
+}
+
+// ******************************************************************************
+// WORKS HEADER ******************************************************************
+// ******************************************************************************
+
+
+.works {
+  .works-header {
+    padding-bottom: 1%;
+    margin: 1%;
+    font-family: "Yanone Kaffeesatz", Arial, Helvetica,sans-serif;
+    color: @grey;
+
+    .title {
+      float: left;
+
+      .tube {
+        height: 1.6em;
+      }
+      h3 {
+        font-size: 1.3em;
+        display: inline-block;
+        color: #4F4640;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding-left: 10px;
+        position: relative;
+        top: -3px;
+      }
+    }
+
+    .filter {
+      float: right;
+      padding: 5px 0px 0px 0px;
+      letter-spacing: 0.1em;
+      
+      li {
+        display: inline-block;
+        margin-bottom: 10px;   
+        margin-left: 10px;   
+      }
+    }
+  }
+}
+
+// **********************************
+// WORKS CONTENT ****************
+// **********************************
+
+
+.works-content {
+  width: 100%;
+
+  .item-wrapper {
+    width: 100%/3;
+    min-height: 250px;
+    float: left;
+
+    .img-div {
+      width: 92%;
+      margin: 0 auto;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        // filter: grayscale(100%);
+      }
+    }
+
+    .description {
+      width: 92%;
+      margin: 0 auto;
+      padding-top: 3%;
+      
+      a {
+        font-family: "Yanone Kaffeesatz", Arial, Helvetica,sans-serif;
+        color: inherit;
+        text-decoration: none;
+          h5 {
+            font-size: 1.5em;
+          }
+      }
+
+      .tags {
+        font-family: "Yanone Kaffeesatz", Arial, Helvetica,sans-serif;
+        padding-top: 1%;
+        .fa {
+          margin-right: 3%;
+        }
+        span {
+          font-size: 0.9em;
+          // color: #cfd931;
+        }
+      }
+    }
+  }
+}
+
+
+// **********************************
+// FOOTER  **********************
+// **********************************
+
+footer {
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  .footer-content {
+    .copyright {
+      float: left;
+      font-size: 0.5em;
+      line-height: 40px;
+      font-family: 'Merriweather', Georgia,"Times New Roman",Times,serif; 
+    }
+    .links {
+      
+      a {
+        float: right;
+        text-decoration: none;
+        margin: 0% 0% 1% 1%;
+        font-size: 1.7em;
+        color: @grey;
+      }
+      a:hover {
+        // color: black;
+        color: #e3d94c;
+      }
+    }
+
+  }
+}
+
+
+.main-wrapper .separator-buttom {
+  margin-bottom: 1%; 
+  margin-top: 0; 
+}
+
+.separator {
+  // background: url("../images/pattern_04.png") repeat-x scroll left bottom transparent;
+  background: url("../images/pattern_06.png") repeat-x scroll left bottom transparent;
+  min-height: 10px;
+  margin: 4% 1% 3% 1%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// **********************************
+// MEDIA  QUERY ****************
+// **********************************
+
+@media screen and (max-width: 850px) {
+  .works-content .item-wrapper  .view p {
+        font-size: 0.6em;
+  }
+  .works-content .item-wrapper  .view a.info {
+        font-size: 0.9em;
+  }
+  .works-content .item-wrapper  {
+        min-height: 210px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .header {
+    .logo {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    .about-me {
+      float: none;
+    }
+  }
+
+  .works-content {
+    .item-wrapper {
+      width: 100%/2;
+        .view p {
+          font-size: 0.7em;
+        }
+        .view a.info {
+          font-size: 0.8em;
+        }
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .works {
+    .works-header {
+    margin: 2%;
+      .title {
+        float: none;
+        display: inline-block;
+        text-align: center;;
+      }
+      .filter {
+        float: none;
+        display: inline-block;
+      }
+    }
+  }
+  .works-content {
+    .item-wrapper {
+      width: 100%;
+      padding-bottom: 6%;
+
+      .img-div {
+        width: 96%;
+      }
+      .description {
+        width: 96%;
+      }
+      .view p {
+        font-size: 0.8em;
+      }
+      .view a.info {
+        font-size: 0.9em;
+      }
+    }
+  }
+
+}
+
+
+
+
